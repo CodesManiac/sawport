@@ -1,4 +1,3 @@
-import React from 'react'
 import { ButtonType } from '../types'
 
 export const Button = ({buttonData}:{buttonData:ButtonType}) => {

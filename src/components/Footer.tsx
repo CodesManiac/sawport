@@ -1,4 +1,3 @@
-import React from 'react'
 import { companySocials } from '../Data';
 
 const Footer = () => {
