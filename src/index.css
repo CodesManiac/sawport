@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+@theme{
+  --font-display:'IBM Plex Sans', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  --color-primary: #305DA6;
+  --color-background:#ffffff;
+  --color-black:#000000;
+  --color-fra:"#F5F8FF";
+  --color-footer-text:"#494747";
+
+}
+@layer base{
+  body{
+    @apply font-display grid place-items-center text-black bg-[#f5f5f5];
+
+  }
+}
+@layer components {
+  .email-container {
+    @apply bg-background flex flex-col h-auto shadow-md px-8 py-4;
+  }
+  .email-logo{
+    @apply  w-36;
+  }
+  .email-button {
+    @apply bg-primary text-white font-medium py-2 px-5 rounded-md text-center;
+  }
+  .email-footer{
+    @apply bg-[#F5F8FF] text-[#494747] text-center px-6 py-8 mt-12;
+  }
+}
